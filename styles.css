@@ -502,31 +502,6 @@ details p {
   color: var(--muted);
 }
 
-.contact-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.contact-list {
-  display: grid;
-  gap: 0.6rem;
-}
-
-.contact-item {
-  text-decoration: none;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  border-radius: 10px;
-  padding: 0.72rem;
-  font-weight: 600;
-}
-
-.contact-item:hover,
-.contact-item:focus-visible {
-  background: var(--surface-strong);
-}
-
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 1.1rem 0 1.4rem;
@@ -564,8 +539,7 @@ details p {
 
   .syllabus-grid,
   .materials-grid,
-  .instructor-grid,
-  .contact-wrap {
+  .instructor-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -596,8 +570,7 @@ details p {
 
   .syllabus-grid,
   .materials-grid,
-  .instructor-grid,
-  .contact-wrap {
+  .instructor-grid {
     grid-template-columns: 1fr;
   }
 
