@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SC3 | Generative Models for Protein Structures and Biomedical Data</title>
+    <meta
+      name="description"
+      content="ENAR 2026 short course on generative models for protein structures and biomedical data."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#overview">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-row">
+        <a class="brand" href="#top">SC3</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#syllabus">Syllabus</a>
+          <a href="#materials">Materials</a>
+          <a href="#instructors">Instructors</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-text">Dark mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="event-pill">ENAR 2026 Spring Meeting</p>
+            <h1>Generative Models for Protein Structures and Biomedical Data</h1>
+            <p class="hero-lead">
+              SC3 short course covering core generative modeling methods and their use in protein structures,
+              drug design, single-cell trajectories, and biomedical data with practical demos.
+            </p>
+            <div class="hero-meta">
+              <p><strong>Instructors:</strong> Anru Zhang, Alex Tong, Fred Peng</p>
+              <p><strong>Background required:</strong> Basic machine learning familiarity is helpful, but no prior generative models experience is required.</p>
+            </div>
+
+            <p class="hero-focus">
+              The syllabus below is the core of this page. Jump directly to it for the full section-by-section breakdown.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#syllabus">View Full Syllabus</a>
+              <a class="btn btn-ghost" href="#materials">View Course Materials</a>
+              <a class="btn btn-ghost" href="#instructors">Meet the Instructors</a>
+            </div>
+          </div>
+
+          <div class="hero-visuals" aria-hidden="true">
+            <article class="viz-card">
+              <h3>Protein Structure Generation</h3>
+              <img class="hero-photo" src="protein-structure.png" alt="Protein ribbon structure diagram" />
+            </article>
+            <article class="viz-card">
+              <h3>Biomedical Time Series</h3>
+              <svg viewBox="0 0 280 140" role="img" aria-label="Abstract biomedical time series graph">
+                <polyline points="0,102 36,94 64,110 92,72 120,82 148,58 178,66 206,44 240,52 280,36" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="0,118 36,114 64,104 92,108 120,92 148,96 178,88 206,92 240,78 280,82" fill="none" stroke="var(--line-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="syllabus">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Course structure</p>
+            <h2>Syllabus</h2>
+            <p>Expanded outline for quick access during and after the course.</p>
+          </div>
+          <div class="card-grid syllabus-grid">
+            <article class="card syllabus-card syllabus-primary">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" /></svg>
+              </div>
+              <h3>Section 1: Foundation Models</h3>
+              <ul>
+                <li>Classic generative models</li>
+                <li>Autoregressive models</li>
+                <li>VAE and GAN</li>
+                <li>Normalizing flow</li>
+                <li>Diffusion and flow matching</li>
+                <li>Discrete diffusion model</li>
+                <li>Code demo: vibe coding</li>
+              </ul>
+            </article>
+
+            <article class="card syllabus-card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12c4-7 12-7 16 0-4 7-12 7-16 0zM12 9.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" /></svg>
+              </div>
+              <h3>Section 2: Biological Applications</h3>
+              <ul>
+                <li>Proteins</li>
+                <li>Drug design</li>
+                <li>Single-cell trajectory</li>
+                <li>Code demo</li>
+              </ul>
+            </article>
+
+            <article class="card syllabus-card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19V5m6 14V9m6 10V12m6 7V7" /></svg>
+              </div>
+              <h3>Section 3: Biomedical Data</h3>
+              <ul>
+                <li>Biomedical data challenges</li>
+                <li>Statistical tasks: imbalanced learning</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="materials">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Resources</p>
+            <h2>Course Materials</h2>
+            <p>Slides are ready to attach now. Recording and code links can be added as they become available.</p>
+          </div>
+          <div class="card-grid materials-grid">
+            <article class="card material-card">
+              <h3>Section 1 Materials</h3>
+              <div class="button-row">
+                <a class="btn btn-primary" href="#" aria-disabled="true">Slides (add link)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Code (coming soon)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Recording (coming soon)</a>
+              </div>
+            </article>
+            <article class="card material-card">
+              <h3>Section 2 Materials</h3>
+              <div class="button-row">
+                <a class="btn btn-primary" href="#" aria-disabled="true">Slides (add link)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Code (coming soon)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Recording (coming soon)</a>
+              </div>
+            </article>
+            <article class="card material-card">
+              <h3>Section 3 Materials</h3>
+              <div class="button-row">
+                <a class="btn btn-primary" href="#" aria-disabled="true">Slides (add link)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Code (coming soon)</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Recording (coming soon)</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="instructors">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">People</p>
+            <h2>Instructors</h2>
+          </div>
+
+          <div class="instructor-grid">
+            <article class="card profile-card">
+              <img src="anru.jpg" alt="Portrait of Anru Zhang" loading="lazy" />
+              <div class="profile-content">
+                <h3>Anru Zhang</h3>
+                <p class="role">Duke University</p>
+                <p><a class="profile-link" href="https://anruzhang.github.io/" target="_blank" rel="noopener noreferrer">Website</a></p>
+                <p>
+                  Primary faculty jointly appointed by Biostatistics and Bioinformatics, Computer Science,
+                  and Medicine at Duke University. Research focuses on tensor learning, generative models,
+                  and high-dimensional statistics in biomedicine.
+                </p>
+                <details>
+                  <summary>Read more</summary>
+                  <p>
+                    Anru received his PhD from the University of Pennsylvania in 2015. He is the recipient
+                    of the IMS Tweedie Award, COPSS Emerging Leader Award, and ASA Gottfried E. Noether
+                    Junior Award. His work is currently supported by NIH R01 grants and an NSF CAREER Award.
+                  </p>
+                </details>
+              </div>
+            </article>
+
+            <article class="card profile-card">
+              <img src="alex.jpg" alt="Portrait of Alex Tong" loading="lazy" />
+              <div class="profile-content">
+                <h3>Alex Tong</h3>
+                <p class="role">Aithyra, Vienna (formerly Duke University)</p>
+                <p><a class="profile-link" href="https://www.alextong.net/" target="_blank" rel="noopener noreferrer">Website</a></p>
+                <p>
+                  Principal Investigator at Aithyra, a research institute at the intersection of machine
+                  learning and life sciences led by Michael Bronstein and funded by the Boehringer Ingelheim Foundation.
+                </p>
+                <details>
+                  <summary>Read more</summary>
+                  <p>
+                    Previously, Alex was briefly an assistant professor at Duke University. He completed a
+                    postdoc with Yoshua Bengio at Mila and earned his PhD from Yale University in 2021.
+                    His research spans generative modeling, deep learning, optimal transport, and causal
+                    discovery for cell development, molecular biology, and protein design. He co-founded Dreamfold.
+                  </p>
+                </details>
+              </div>
+            </article>
+
+            <article class="card profile-card">
+              <img src="fred.png" alt="Portrait of Fred Peng" loading="lazy" />
+              <div class="profile-content">
+                <h3>Fred Peng</h3>
+                <p class="role">Duke University</p>
+                <p><a class="profile-link" href="https://pengzhangzhi.github.io/home/" target="_blank" rel="noopener noreferrer">Website</a></p>
+                <p>
+                  PhD student at Duke University focused on generative modeling and protein design.
+                </p>
+                <details>
+                  <summary>Read more</summary>
+                  <p>
+                    Fred works on practical and theoretical advances in generative models for protein
+                    structures and biomedical data applications.
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-wrap">
+          <div class="section-head compact">
+            <p class="kicker">Contact</p>
+            <h2>Get in touch</h2>
+            <p>For course updates and collaboration inquiries:</p>
+          </div>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:anru.zhang@duke.edu">anru.zhang@duke.edu</a>
+            <a class="contact-item" href="mailto:alex.tong@aithyra.org">alex.tong@aithyra.org</a>
+            <a class="contact-item" href="mailto:fred.peng@duke.edu">fred.peng@duke.edu</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>SC3 | ENAR 2026 Spring Meeting</p>
+        <p>Last updated: <span id="last-updated"></span></p>
+      </div>
+      <div class="container source-note">
+        <p>
+          Protein image source:
+          <a href="https://commons.wikimedia.org/wiki/File:MuSK_protein_(ribbon_diagram).PNG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
+          (CC BY-SA 4.0).
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
