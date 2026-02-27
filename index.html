@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://3Dmol.org/build/3Dmol-min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -47,32 +48,94 @@
               drug design, single-cell trajectories, and biomedical data with practical demos.
             </p>
             <div class="hero-meta">
-              <p><strong>Instructors:</strong> Anru Zhang, Alex Tong, Fred Peng</p>
-              <p><strong>Background required:</strong> Basic machine learning familiarity is helpful, but no prior generative models experience is required.</p>
+              <p>
+                <strong>Instructors:</strong>
+                <a href="https://anruzhang.github.io/" target="_blank" rel="noopener noreferrer">Anru Zhang</a>,
+                <a href="https://www.alextong.net/" target="_blank" rel="noopener noreferrer">Alex Tong</a>,
+                <a href="https://pengzhangzhi.github.io/home/" target="_blank" rel="noopener noreferrer">Fred Peng</a>
+              </p>
             </div>
-
-            <p class="hero-focus">
-              The syllabus below is the core of this page. Jump directly to it for the full section-by-section breakdown.
-            </p>
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#syllabus">View Full Syllabus</a>
               <a class="btn btn-ghost" href="#materials">View Course Materials</a>
-              <a class="btn btn-ghost" href="#instructors">Meet the Instructors</a>
             </div>
           </div>
 
-          <div class="hero-visuals" aria-hidden="true">
-            <article class="viz-card">
-              <h3>Protein Structure Generation</h3>
-              <img class="hero-photo" src="protein-structure.png" alt="Protein ribbon structure diagram" />
+          <div class="hero-visuals">
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+            <div class="hero-visual-shell">
+              <p class="hero-visual-label">Interactive PDB structure · 1HV4 · HIV-1 Capsid</p>
+              <div class="hero-photo-wrap" id="hero-photo-wrap">
+                <div class="hero-pdb-viewer" id="hero-pdb-viewer" data-pdb-id="1HV4" aria-label="Interactive 3D protein structure viewer"></div>
+                <img class="hero-photo hero-photo-fallback" src="protein-structure.png" alt="Protein ribbon structure diagram" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-modules" id="featured-modules">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Course highlights</p>
+            <h2>Featured Modules</h2>
+            <p>Three application areas anchor the course: structural biology, molecular design, and temporal biomedical data.</p>
+          </div>
+          <div class="card-grid feature-grid">
+            <article class="feature-card">
+              <h3>Protein Structure</h3>
+              <div class="feature-media">
+                <img src="protein-structure.png" alt="Protein ribbon structure graphic" loading="lazy" />
+              </div>
+              <p>
+                Learn how modern generative models represent and sample protein geometry for structure prediction,
+                design, and biological discovery.
+              </p>
             </article>
-            <article class="viz-card">
-              <h3>Biomedical Time Series</h3>
-              <svg viewBox="0 0 280 140" role="img" aria-label="Abstract biomedical time series graph">
-                <polyline points="0,102 36,94 64,110 92,72 120,82 148,58 178,66 206,44 240,52 280,36" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="0,118 36,114 64,104 92,108 120,92 148,96 178,88 206,92 240,78 280,82" fill="none" stroke="var(--line-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+
+            <article class="feature-card">
+              <h3>Drug Design</h3>
+              <div class="feature-media">
+                <img src="drug.png" alt="Drug design molecular visualization" loading="lazy" />
+              </div>
+              <p>
+                Explore generative strategies for molecule discovery, candidate optimization, and search over
+                large chemical design spaces.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Time Series</h3>
+              <div class="feature-media feature-media-graph">
+                <svg viewBox="0 0 320 200" role="img" aria-label="Biomedical time series graph">
+                  <defs>
+                    <linearGradient id="series-line-a" x1="0%" x2="100%" y1="0%" y2="0%">
+                      <stop offset="0%" stop-color="#003087" />
+                      <stop offset="100%" stop-color="#2ac0a2" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="16" y="16" width="288" height="168" rx="18" fill="#f8fbff" />
+                  <g stroke="#dbe7fb" stroke-width="2">
+                    <line x1="40" y1="48" x2="280" y2="48" />
+                    <line x1="40" y1="88" x2="280" y2="88" />
+                    <line x1="40" y1="128" x2="280" y2="128" />
+                    <line x1="40" y1="168" x2="280" y2="168" />
+                  </g>
+                  <polyline points="40,138 70,124 100,132 130,96 160,104 190,74 220,82 250,56 280,68" fill="none" stroke="url(#series-line-a)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                  <polyline points="40,154 70,150 100,140 130,146 160,130 190,134 220,118 250,124 280,108" fill="none" stroke="#9bb6e9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                  <g fill="#003087">
+                    <circle cx="130" cy="96" r="6" />
+                    <circle cx="190" cy="74" r="6" />
+                    <circle cx="250" cy="56" r="6" />
+                  </g>
+                </svg>
+              </div>
+              <p>
+                Cover diffusion, sequence modeling, and trajectory analysis for longitudinal signals, single-cell
+                transitions, and other biomedical time-dependent data.
+              </p>
             </article>
           </div>
         </div>
@@ -174,7 +237,9 @@
 
           <div class="instructor-grid">
             <article class="card profile-card">
-              <img src="anru.jpg" alt="Portrait of Anru Zhang" loading="lazy" />
+              <div class="profile-media profile-media-anru">
+                <img src="anru.jpg" alt="Portrait of Anru Zhang" loading="lazy" />
+              </div>
               <div class="profile-content">
                 <h3>Anru Zhang</h3>
                 <p class="role">Duke University</p>
@@ -195,7 +260,9 @@
             </article>
 
             <article class="card profile-card">
-              <img src="alex.jpg" alt="Portrait of Alex Tong" loading="lazy" />
+              <div class="profile-media profile-media-alex">
+                <img src="alex.jpg" alt="Portrait of Alex Tong" loading="lazy" />
+              </div>
               <div class="profile-content">
                 <h3>Alex Tong</h3>
                 <p class="role">Aithyra, Vienna</p>
@@ -216,7 +283,9 @@
             </article>
 
             <article class="card profile-card">
-              <img src="fred.png" alt="Portrait of Fred Peng" loading="lazy" />
+              <div class="profile-media profile-media-fred">
+                <img src="fred.png" alt="Portrait of Fred Peng" loading="lazy" />
+              </div>
               <div class="profile-content">
                 <h3>Fred Peng</h3>
                 <p class="role">Duke University</p>
@@ -243,13 +312,6 @@
       <div class="container footer-row">
         <p>SC3 | ENAR 2026 Spring Meeting</p>
         <p>Last updated: <span id="last-updated"></span></p>
-      </div>
-      <div class="container source-note">
-        <p>
-          Protein image source:
-          <a href="https://commons.wikimedia.org/wiki/File:MuSK_protein_(ribbon_diagram).PNG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
-          (CC BY-SA 4.0).
-        </p>
       </div>
     </footer>
   </body>
